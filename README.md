@@ -32,21 +32,21 @@ The LLM backend is switchable between Claude and a local Ollama model via a sing
 ```
 Doclyst-rag-based-agents/
 ├── agents/
-│   ├── supervisor.py         # LangGraph graph + routing logic
-│   ├── retrieval_agent.py    # dense retrieval over FAISS/ChromaDB
-│   ├── table_agent.py        # pandas + LLM over extracted tables
-│   ├── metadata_agent.py     # document registry queries
-│   └── synthesis_agent.py    # answer fusion and citations
+│   ├── supervisor.py - LangGraph graph + routing logic
+│   ├── retrieval_agent.py - dense retrieval over FAISS/ChromaDB
+│   ├── table_agent.py - pandas + LLM over extracted tables
+│   ├── metadata_agent.py - document registry queries
+│   └── synthesis_agent.py - answer fusion and citations
 ├── core/
-│   ├── llm_factory.py        # switchable LLM backend
-│   ├── vectorstore.py        # FAISS and ChromaDB abstraction
-│   ├── document_loader.py    # PDF, DOCX, CSV, TXT ingestion
-│   └── config.py             # env-based config
-├── data/sample_docs/         # synthetic Q3 2024 maintenance data
-├── frontend/app.py           # Streamlit UI
-├── scripts/ingest_documents.py
-├── tests/test_agents.py      # unit tests with mocked LLM
-└── .github/workflows/ci.yml  # lint + test + Docker build on push
+│   ├── llm_factory.py - switchable LLM backend
+│   ├── vectorstore.py - FAISS and ChromaDB abstraction
+│   ├── document_loader.py - PDF, DOCX, CSV, TXT ingestion
+│   └── config.py - env-based config
+├── data - synthetic Q3 2024 maintenance data
+├── app.py - Streamlit UI
+├── scripts/ingest_documents.py - Ingest data
+├── tests/test_agents.py - unit tests with mocked LLM
+└── .github/workflows/ci.yml - lint + test + Docker build on push
 ```
 
 
