@@ -1,0 +1,140 @@
+MANUFACTURING MAINTENANCE REPORT
+Plant: Dresden Industrial Facility — Unit 3
+Report Period: Q3 2024 (July 1 – September 30, 2024)
+Prepared by: Maintenance Engineering Department
+Document ID: MNT-Q3-2024-U3
+
+========================================
+EXECUTIVE SUMMARY
+========================================
+
+This report covers all scheduled and unscheduled maintenance activities for Unit 3
+during Q3 2024. A total of 47 maintenance events were recorded across 12 machine
+systems. Of these, 31 were planned preventive maintenance tasks and 16 were
+unscheduled corrective interventions.
+
+Total downtime across Unit 3: 187 hours
+Most affected system: Hydraulic Press Line HP-07 (64 hours downtime)
+Mean Time Between Failures (MTBF): 312 hours
+Mean Time To Repair (MTTR): 11.7 hours
+
+========================================
+MACHINE-LEVEL INCIDENT LOG
+========================================
+
+MACHINE: M-101 — CNC Milling Station Alpha
+Incidents: 2 (1 scheduled, 1 unscheduled)
+Total downtime: 8 hours
+Events:
+  - 2024-07-12: Scheduled spindle lubrication and calibration. Duration: 4 hours.
+  - 2024-08-03: Unscheduled stop. Coolant pump seal failure. Replaced seal assembly.
+    Duration: 4 hours. Root cause: Wear beyond service limit. Seal last replaced 2022-11.
+Recommended action: Reduce coolant pump inspection interval from 12 to 9 months.
+
+MACHINE: M-204 — Hydraulic Press HP-07
+Incidents: 6 (2 scheduled, 4 unscheduled)
+Total downtime: 64 hours
+Events:
+  - 2024-07-05: Scheduled hydraulic fluid replacement and filter change. Duration: 6h.
+  - 2024-07-29: CRITICAL — Hydraulic actuator failure. Machine halted mid-cycle.
+    Duration: 18 hours. Root cause: Fatigue crack in actuator rod. Part sourced externally.
+  - 2024-08-14: Pressure sensor PS-204B recalibration. Duration: 2 hours.
+  - 2024-08-22: Hydraulic pump cavitation noise reported by operator. Inspected.
+    Air ingress through degraded inlet gasket. Replaced. Duration: 6 hours.
+  - 2024-09-01: Oil contamination detected in hydraulic reservoir. Full drain and flush.
+    Duration: 14 hours. Root cause: Contaminated oil batch from supplier.
+  - 2024-09-18: Scheduled quarterly inspection. Duration: 18 hours.
+Recommended action: HP-07 due for major overhaul in Q4 2024. Prioritise procurement.
+Flag to engineering: Consider root cause analysis for recurring hydraulic issues.
+
+MACHINE: M-312 — Conveyor Belt System CB-3
+Incidents: 3 (2 scheduled, 1 unscheduled)
+Total downtime: 22 hours
+Events:
+  - 2024-07-20: Belt tensioner adjustment and roller bearing lubrication. Duration: 4h.
+  - 2024-08-07: Belt surface wear exceeded threshold (>2.1mm). Belt replaced.
+    Duration: 12 hours. Root cause: Abrasive load from upstream process change.
+  - 2024-09-10: Scheduled quarterly inspection. All components within tolerances. Duration: 6h.
+Recommended action: Review upstream process parameters causing accelerated belt wear.
+
+MACHINE: M-418 — Robotic Welding Cell RW-2
+Incidents: 4 (3 scheduled, 1 unscheduled)
+Total downtime: 31 hours
+Events:
+  - 2024-07-08: TCP (Tool Centre Point) recalibration. Duration: 3 hours.
+  - 2024-07-31: Joint 3 motor encoder fault. Replaced encoder. Duration: 8 hours.
+    Root cause: Vibration-induced connector loosening.
+  - 2024-08-28: Wire feed system flush and nozzle replacement. Duration: 6h.
+  - 2024-09-15: Full robot arm inspection. Joint 5 shows early wear. Flagged for Q4. Duration: 14h.
+Recommended action: Monitor Joint 5. Schedule replacement for Q1 2025 if wear progresses.
+
+MACHINE: M-522 — Industrial Chiller Unit CH-1
+Incidents: 2 (1 scheduled, 1 unscheduled)
+Total downtime: 18 hours
+Events:
+  - 2024-08-01: Refrigerant level check, condenser coil cleaning. Duration: 6h.
+  - 2024-09-05: Compressor vibration alarm triggered. Bearing worn. Replaced.
+    Duration: 12 hours. Root cause: Bearing overload due to refrigerant undercharge.
+Recommended action: Increase refrigerant checks to monthly during summer months.
+
+MACHINE: M-633 — Laser Cutting System LC-4
+Incidents: 1 (scheduled)
+Total downtime: 8 hours
+Events:
+  - 2024-08-19: Lens cleaning, beam alignment check, gas supply verification. Duration: 8h.
+Status: No anomalies detected. Operating within all specified parameters.
+
+MACHINE: M-714 — Pneumatic Press PP-2
+Incidents: 3 (1 scheduled, 2 unscheduled)
+Total downtime: 21 hours
+Events:
+  - 2024-07-15: Scheduled valve inspection and seal replacement. Duration: 5h.
+  - 2024-08-10: Pressure drop alert. Inlet filter blocked. Replaced. Duration: 2h.
+  - 2024-09-22: Cylinder rod corrosion discovered during routine check.
+    Full cylinder assembly replaced. Duration: 14h. Root cause: Humidity ingress.
+Recommended action: Install dehumidifier upstream of PP-2 intake manifold.
+
+========================================
+SENSOR ANOMALY SUMMARY — Q3 2024
+========================================
+
+The following sensors exceeded their defined alert thresholds during Q3 2024:
+
+Sensor ID     | Machine | Parameter         | Alert Date  | Value     | Threshold | Status
+PS-204B       | M-204   | Pressure (bar)    | 2024-07-29  | 187.3     | 160.0     | Resolved
+TMP-312A      | M-312   | Temperature (°C)  | 2024-08-06  | 78.4      | 70.0      | Resolved
+VIB-522C      | M-522   | Vibration (mm/s)  | 2024-09-05  | 12.1      | 8.0       | Resolved
+HUM-714D      | M-714   | Humidity (%)      | 2024-09-21  | 84.2      | 60.0      | Resolved
+TMP-418E      | M-418   | Temperature (°C)  | 2024-07-31  | 91.7      | 85.0      | Resolved
+
+All anomalies were addressed and resolved within the same quarter.
+No sensor anomalies remain open as of 2024-09-30.
+
+========================================
+MAINTENANCE COST SUMMARY
+========================================
+
+Category                  | Cost (EUR)
+--------------------------|------------
+Labour (internal)         | 24,800
+Spare parts               | 31,650
+External contractors      | 8,400
+Total Q3 2024             | 64,850
+
+Highest cost machine: M-204 (Hydraulic Press HP-07) — EUR 28,200
+
+========================================
+RECOMMENDATIONS FOR Q4 2024
+========================================
+
+1. Schedule M-204 major overhaul — estimated EUR 35,000
+2. Investigate recurring hydraulic system failures (M-204)
+3. Monitor M-418 Joint 5 wear progression
+4. Install dehumidifier upstream of M-714
+5. Review coolant pump inspection cycle for M-101
+6. Consider upstream process review for M-312 belt wear
+7. Increase M-522 refrigerant checks to monthly (summer only)
+
+========================================
+END OF REPORT
+========================================
